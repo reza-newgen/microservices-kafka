@@ -17,7 +17,6 @@ public class OrderConsumer {
     )
     public void consume(OrderEvent event){
         LOGGER.info(String.format("Order event received in stock service => %s", event.toString()));
-
         // save the order event into the database
     }
 }
